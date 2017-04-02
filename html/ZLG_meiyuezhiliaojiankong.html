@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>每月治疗监控</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/index.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-row>div{
+				line-height: 32px;
+			}
+			.mui-row>div button{
+				margin-top: 2px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <img src="../images/xiala.png" class="xialaImg">
+		    <h1 class="mui-title">每月治疗监控</h1>
+		</header>
+		<div class="dropdown dropdownTop">
+			<div class="mui-row">
+				<div class="mui-col-xs-4">
+					<ul class="min-screen">
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="huanzheliebiao.html">患者列表</a></li>
+						<li><a href="javascript:;">治疗管理</a></li>
+						<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+						<li><a href="javascript:;">患者交流</a></li>
+						<li><a href="login.html">登录页面</a></li>
+						<li><a href="shenqingzhuce.html">申请注册</a></li>
+	               </ul>
+				</div>
+			</div>				
+		</div>
+		<div class="dropdown dropdownLeft">
+			<div class="mui-row">
+				<ul class="max-screen">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="huanzheliebiao.html">我的患者</a></li>
+					<li><a href="javascript:;">治疗列表</a></li>
+					<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+					<li><a href="javascript:;">患者交流</a></li>
+					<li><a href="EMR.html">病例管理</a></li>
+					<li><a href="gerenxinxi.html">个人中心</a></li>
+				</ul>
+			</div>		
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="mui-row">
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox1">
+						<a href="../index.html">
+							<img src="../images/home.png" src0="../images/home.png" src1="../images/home1.png" alt="">
+							<p>首页</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox2">
+						<a href="javascript:;">
+							<img src="../images/huanzhe.png" src0="../images/huanzhe.png" src1="../images/huanzhe.png" alt="">
+							<p>联系患者</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox3">
+						<a href="javascript:;">
+							<img src="../images/zhuli.png" src0="../images/zhuli.png" src1="../images/zhuli1.png" alt="">
+							<p>联系助理</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox4">
+						<a href="javascript:;">
+							<img src="../images/back.png" src0="../images/back.png" src1="../images/back1.png" alt="">
+							<p>返回</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">
+						第一个月
+					</a>
+					<a class="mui-control-item" href="#item2">
+						第二个月
+					</a>
+					<a class="mui-control-item" href="#item3">
+						第三个月
+					</a>
+					<a class="mui-control-item" href="#item4">
+						第四个月
+					</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div class="b_c" style="margin: 0 10px;border-bottom: 0;">
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								日期
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								完成情况
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								日期
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								完成情况
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+							<a href="ZLG_meirizhiliaojiankong.html">1</a> </div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo1" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								2
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo2" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								3
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo3" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								4
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo4" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								5
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo5" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								6
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo6" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								7
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo7" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								8
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo8" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								9
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo9" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								10
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo10" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								11
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo11" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								12
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo12" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								13
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo13" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								14
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo14" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								15
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo15" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								16
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo16" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								17
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo17" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								18
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo18" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								19
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo19" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								20
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo20" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								21
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo21" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								22
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo22" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								23
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo23" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								24
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo24" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								25
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo25" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								26
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo26" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								27
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo27" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								28
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo28" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								29
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo29" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								30
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+								<div class="demo30" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								31
+							</div>
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+								<div class="demo31" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in"><span></span></p>
+								</div>
+							</div>
+							<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6">
+								2017.1.7
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+				</div>
+				<div id="item3" class="mui-control-content">
+				</div>
+				<div id="item4" class="mui-control-content">
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/zepto_1.1.3.js"></script>
+		<script src="../js/index.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			dropDown();
+			dropDownSelect();
+			//设置进度条
+			mui('.demo1').progressbar().setProgress(50);
+			mui('.demo2').progressbar().setProgress(40);
+			mui('.demo3').progressbar().setProgress(10);
+			mui('.demo4').progressbar().setProgress(60);
+			mui('.demo5').progressbar().setProgress(100);
+		</script>
+	</body>
+
+</html>

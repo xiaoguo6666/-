@@ -1,0 +1,1033 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>初诊录入确认</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/index.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-row>div{
+				line-height: 32px;
+			}
+			.mui-row>div button{
+				margin-top: 2px;
+			}
+			.zhedie.mui-table-view .mui-table-view-cell{
+				padding: 0;
+				background: #efeff4;
+			}
+			.zhedie.mui-table-view .mui-table-view-cell a{
+				margin: 0;
+			}
+			.zhedie.mui-table-view:after{
+				background: no-repeat;
+			}
+			.zhedie.mui-table-view .mui-table-view-cell.mui-collapse .mui-collapse-content{
+				padding: 0 6px;
+				margin: 0;
+			}
+			.detail{
+				display: none;
+			}
+			.detail.active{
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <img src="../images/xiala.png" class="xialaImg">
+		    <h1 class="mui-title">初诊录入确认</h1>
+		</header>
+		<div class="dropdown dropdownTop">
+			<div class="mui-row">
+				<div class="mui-col-xs-4">
+					<ul class="min-screen">
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="huanzheliebiao.html">患者列表</a></li>
+						<li><a href="javascript:;">治疗管理</a></li>
+						<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+						<li><a href="javascript:;">患者交流</a></li>
+						<li><a href="login.html">登录页面</a></li>
+						<li><a href="shenqingzhuce.html">申请注册</a></li>
+	               </ul>
+				</div>
+			</div>				
+		</div>
+		<div class="dropdown dropdownLeft">
+			<div class="mui-row">
+				<ul class="max-screen">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="huanzheliebiao.html">我的患者</a></li>
+					<li><a href="javascript:;">治疗列表</a></li>
+					<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+					<li><a href="javascript:;">患者交流</a></li>
+					<li><a href="EMR.html">病例管理</a></li>
+					<li><a href="gerenxinxi.html">个人中心</a></li>
+				</ul>
+			</div>		
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="mui-row">
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox1">
+						<a href="../index.html">
+							<img src="../images/home.png" src0="../images/home.png" src1="../images/home1.png" alt="">
+							<p>首页</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox2">
+						<a href="javascript:;">
+							<img src="../images/tijiao.png" src0="../images/tijiao.png" src1="../images/tijiao.png" alt="">
+							<p>提交记录</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox3">
+						<a href="JLG_yishengzhuli.html">
+							<img src="../images/zhuli.png" src0="../images/zhuli.png" src1="../images/zhuli1.png" alt="">
+							<p>联系助理</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox4">
+						<a href="javascript:;">
+							<img src="../images/back.png" src0="../images/back.png" src1="../images/back1.png" alt="">
+							<p>返回</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="mui-content">
+			<div class="container b_c" style="border-bottom: 0;margin: 0 10px;">
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">患者姓名</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						<input type="text" name="name" placeholder="">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<a href="HZG_huanzhexinyu.html">
+							<button class="btn btn-success" style="padding: 4px 6px;">信誉</button>
+							<div class="bingqing bingqing3" style="float:none;display:inline-block;"></div>
+							<div class="xinyong xinyong2" style="float:none;display:inline-block;"></div>
+						</a>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<a href="HZG_huanzhexinxi.html">
+							<button class="btn btn-success">个人信息</button>
+						</a>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">主诉：</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								     <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="30"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">病史：</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="500"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+                    </div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 text_l" style="margin-left: 10px;">
+							OD远近视力
+						</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 text_l" style="margin-left: 10px;">
+							OD屈光状态
+							<button class="btn btn-success change" style="margin-left: 5px;">小瞳</button>
+							<input type="text" name="" style="width: 20%" maxlength="10" class="onlyE">
+							ADD：
+							<input type="text" name="" style="width: 15%" maxlength="15" class="onlyE">
+							DS</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">屈光类型</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">远视</option>  
+						  	<option value="2">近视</option>  
+						  	<option value="3">散光</option>  
+						  	<option value="4">复性远视散光</option>  
+						  	<option value="5">复性近视散光</option>  
+						  	<option value="6">混合散光</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">注视性质</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">中心注视</option>  
+						  	<option value="2">旁中心凹注视</option>  
+						  	<option value="3">黄斑注视</option>  
+						  	<option value="4">周边注视</option>  
+						  	<option value="5">游走性注视</option>
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4">
+						  <input type="text" name="" style="width: 60%" class="onlyE" maxlength=":10">
+							DS
+						</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4"><input type="text" name=""  style="width: 60%" class="onlyE" maxlength="10">
+							DC
+						</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4 "><input type="text" name="" value="" style="width: 60%" class="onlyE" maxlength="10">°
+						</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 text_l" style="margin-left: 10px;">OS远近视力</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">0.02</option>  
+						  	<option value="2">0.04</option>  
+						  	<option value="3">0.06</option>  
+						  	<option value="4">0.08</option>  
+						  	<option value="5">0.1</option>  
+						  	<option value="6">0.12</option>  
+						  	<option value="7">0.15</option>  
+						  	<option value="8">0.2</option>  
+						  	<option value="9">0.25</option>  
+						  	<option value="10">0.3</option>  
+						  	<option value="11">0.4</option>  
+						  	<option value="12">0.5</option>  
+						  	<option value="13">0.6</option>  
+						  	<option value="14">0.7</option>  
+						  	<option value="15">0.8</option>  
+						  	<option value="16">0.9</option>  
+						  	<option value="17">1.0</option>  
+						  	<option value="18">1.2</option>  
+						  	<option value="19">1.5</option>  
+						  	<option value="20">2.0</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-ld-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-ld-12 text_l" style="margin-left: 10px;">
+							OS屈光状态
+							<button class="btn btn-success change" style="margin-left: 5px;">小瞳</button>
+							<input type="text" name="" style="width: 20%" maxlength="10" class="onlyE">
+							ADD：
+							<input type="text" name="" style="width: 15%" maxlength="15" class="onlyE">
+							DS</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">屈光类型</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">远视</option>  
+						  	<option value="2">近视</option>  
+						  	<option value="3">散光</option>  
+						  	<option value="4">复性远视散光</option>  
+						  	<option value="5">复性近视散光</option>  
+						  	<option value="6">混合散光</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">注视性质</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">中心注视</option>  
+						  	<option value="2">旁中心凹注视</option>  
+						  	<option value="3">黄斑注视</option>  
+						  	<option value="4">周边注视</option>  
+						  	<option value="5">游走性注视</option>
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4 "><input type="text" name="" value="" style="width: 60%" maxlength="10" class="onlyE">
+							DS
+						</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4"><input type="text" name="" value=""  style="width: 60%" maxlength="10" class="onlyE">
+							DC
+						</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4"><input type="text" name="" value="" style="width: 60%" maxlength="10" class="onlyE">°
+						</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">斜视类型</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						<select>  
+						  	<option value="1">无斜视</option>  
+						  	<option value="2">外隐斜</option>  
+						  	<option value="3">内隐斜</option>  
+						  	<option value="4">间歇性斜视</option>  
+						  	<option value="5">外斜视</option>  
+						  	<option value="6">内斜视</option>
+						  	<option value="7">垂直斜视</option>
+						  	<option value="8">其它斜视</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">固视情况</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">交替性注视</option>  
+						  	<option value="2">右眼优先固视</option>  
+						  	<option value="3">左眼优先固视</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">斜视角度</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+					<input type="text" name="" value="" style="width: 40%" maxlength="5" class="onlyE">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">有无抑制</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>  
+						  	<option value="1">无抑制</option>  
+						  	<option value="2">右眼抑制</option>  
+						  	<option value="3">左眼抑制</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">拥挤现象(左)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						<select>  
+						  	<option value="1">有</option>  
+						  	<option value="2">无</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">拥挤现象(右)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">有</option>  
+						  	<option value="2">无</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">低照度视力(左)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						<select>  
+						  	<option value="1">有下降</option>  
+						  	<option value="2">无下降</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">低照度视力(右)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">有下降</option>  
+						  	<option value="2">无下降</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">Worth灯30</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						<select>  
+						  	<option value="1">两个红灯</option>  
+						  	<option value="2">三个绿灯</option>  
+						  	<option value="3">四个灯</option>  
+						  	<option value="4">五个灯</option>  
+						  	<option value="5">红绿交替</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">Worth灯6M</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">两个红灯</option>  
+						  	<option value="2">三个绿灯</option>  
+						  	<option value="3">四个灯</option>  
+						  	<option value="4">五个灯</option>  
+						  	<option value="5">红绿交替</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">马氏杆H</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						<select>  
+						  	<option value="1">正常</option>  
+						  	<option value="2">交叉复视</option>  
+						  	<option value="3">同侧复视</option>  
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">马氏杆V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>  
+						  	<option value="1">正常</option>  
+						  	<option value="2">右上左下</option>   
+						  	<option value="3">右下左上</option>  
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">立体视</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						<select>  
+						  	<option value="1">3000秒</option>  
+						  	<option value="2">1200秒</option>  
+						  	<option value="3">800秒</option>  
+						  	<option value="4">600秒</option>  
+						  	<option value="5">400秒</option>  
+						  	<option value="6">200秒</option>
+						  	<option value="7">140秒</option>
+						  	<option value="8">100秒</option>
+						  	<option value="9">60秒</option>
+						  	<option value="10">40秒</option>
+						  	<option value="11">无立体视</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">图片资料</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-">
+						 <input type="file" name=""> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">外眼检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">眼前节检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">眼后节检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">其他检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">诊断</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">OD</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						<select>
+							<option value="1">斜视性弱视</option>
+							<option value="2">屈光不正性弱视</option>
+							<option value="3">屈光参差性弱视</option>
+							<option value="4">形觉剥夺性弱视</option>
+							<option value="5">先天性弱视</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>
+							<option value="1">斜视性弱视</option>
+							<option value="2">屈光不正性弱视</option>
+							<option value="3">屈光参差性弱视</option>
+							<option value="4">形觉剥夺性弱视</option>
+							<option value="5">先天性弱视</option>
+							<option value="6">空白</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>
+							<option value="1">轻度弱视</option>
+							<option value="2">中度弱视</option>
+							<option value="3">重度弱视</option>
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">OS</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						<select>
+							<option value="1">斜视性弱视</option>
+							<option value="2">屈光不正性弱视</option>
+							<option value="3">屈光参差性弱视</option>
+							<option value="4">形觉剥夺性弱视</option>
+							<option value="5">先天性弱视</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<select>
+							<option value="1">斜视性弱视</option>
+							<option value="2">屈光不正性弱视</option>
+							<option value="3">屈光参差性弱视</option>
+							<option value="4">形觉剥夺性弱视</option>
+							<option value="5">先天性弱视</option>
+							<option value="6">空白</option>
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select>
+							<option value="1">轻度弱视</option>
+							<option value="2">中度弱视</option>
+							<option value="3">重度弱视</option>
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">诊断</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								     <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="height: 32px;"></div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<ul class="mui-table-view zhedie">
+						    <li class="mui-table-view-cell mui-collapse" style="background: #40B0BE;color: #fff;">
+						        <a class="mui-navigate-right" href="#">治疗方案</a>
+						        <div class="mui-collapse-content" style="padding: 0;">
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set set1">
+						            		用药处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="panel-body" style="text-align: left;">
+													R:<textarea name="" rows="" cols="" style="border: 0;" maxlength="200"></textarea>
+												</div>
+							            	</div>
+							            </div>
+							            <div class="mui-row bB_c detail2 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														正常
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														自购
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														金额
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														处方及优惠
+													</div>
+												</div>
+												<div class="mui-row">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														<input type="text" name="" id="" value="" style="background: #fff;padding: 0;" maxlength="7" class="onlyNum"/>
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														<input type="text" name="" id="" value="" style="background: #fff;padding: 0;" maxlength="50"/>
+													</div>
+												</div>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set1">
+						            		配镜处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 bB_c">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OD
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														<input type="" name="" id="" value="" style="background: #fff;padding: 0;" maxlength="40"/>
+													</div>
+												</div>
+							            	</div>
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OS
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														<input type="" name="" id="" value="" style="background: #fff;padding: 0;" maxlength="40"/>
+													</div>
+												</div>
+							            	</div>
+							            </div>
+							            <div class="mui-row bB_c detail2 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														正常
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														自购
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														普通
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														双光
+													</div>
+												</div>
+												<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+												</div>
+							            	</div>
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														压抑
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														斜视
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														金额
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														型号及优惠
+													</div>
+												</div>
+												<div class="mui-row">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<input type="checkbox" name="" id="" value="" style="height: auto;"/>
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														<input type="text" name="" id="" value="" style="background: #fff;padding: 0;" maxlength="7" class="onlyNum"/>
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														<input type="text" name="" id="" value="" style="background: #fff;padding: 0;" maxlength="50"/>
+													</div>
+												</div>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set1">
+						            		遮盖处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 bB_c">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OD遮盖方法
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														<input type="" name="" id="" value="" style="background: #fff;padding: 0;"/>
+													</div>
+												</div>
+							            	</div>
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OS遮盖方法
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														<input type="" name="" id="" value="" style="background: #fff;padding: 0;"/>
+													</div>
+												</div>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set1">
+						            		训练处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<textarea name="" rows="" cols="" class="fixTextarea" style="background: #fff;"></textarea>
+							            	</div>
+							            </div>
+							            <div class="mui-row bB_c detail2 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<textarea name="" rows="" cols="" class="fixTextarea" style="background: #fff;"></textarea>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row">
+						            	<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+						            		其他
+						            	</div>
+						            	<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+						            		<input type="" name="" id="" value="" style="background: #fff;" maxlength="500"/>
+						            	</div>
+						            </div>
+						        </div>
+						    </li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">录入人员</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="张三">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">录入时间</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">2016.11.17</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">确认人员</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="张三">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">确认时间</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">2016.11.17</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">修改人员</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="李四">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">修改时间</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">2016.11.17</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">主诊医生</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="张三">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">医生助理</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">2016.11.17</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/zepto_1.1.3.js"></script>
+		<script src="../js/index.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			dropDown();
+			dropDownSelect();
+			
+			$('.mui-row .change').each(function(){
+				$(this).on('click',function(){
+					var html = $(this).html();
+					if(html=='小瞳'){
+						$(this).html('散瞳')
+					}else{
+						$(this).html('小瞳');
+					}
+				})
+			})
+			$('.mui-row .set1').each(function(){
+				$(this).on('click',function(){
+					$('.detail').removeClass('active');
+					$(this).parent().next().find('.detail1').addClass('active');
+				})
+			})
+			$('.mui-row .set2').each(function(){
+				$(this).on('click',function(){
+					$('.detail').removeClass('active');
+					$(this).parent().next().find('.detail2').addClass('active');
+				})
+			})
+		</script>
+	</body>
+
+</html>

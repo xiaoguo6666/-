@@ -1,0 +1,754 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>患者详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/index.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-row>div{
+				line-height: 32px;
+			}
+			.mui-row>div button{
+				margin-top: 2px;
+			}
+			.zhedie.mui-table-view .mui-table-view-cell{
+				padding: 0;
+				background: #efeff4;
+			}
+			.zhedie.mui-table-view .mui-table-view-cell a{
+				margin: 0;
+			}
+			.zhedie.mui-table-view:after{
+				background: no-repeat;
+			}
+			.zhedie.mui-table-view .mui-table-view-cell.mui-collapse .mui-collapse-content{
+				padding: 0 6px;
+				margin: 0;
+			}
+			.detail{
+				display: none;
+			}
+			.detail.active{
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <img src="../images/xiala.png" class="xialaImg">
+		    <h1 class="mui-title">患者详情</h1>
+		</header>
+		<div class="dropdown dropdownTop">
+			<div class="mui-row">
+				<div class="mui-col-xs-4">
+					<ul class="min-screen">
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="huanzheliebiao.html">患者列表</a></li>
+						<li><a href="javascript:;">治疗管理</a></li>
+						<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+						<li><a href="javascript:;">患者交流</a></li>
+						<li><a href="login.html">登录页面</a></li>
+						<li><a href="shenqingzhuce.html">申请注册</a></li>
+	               </ul>
+				</div>
+			</div>				
+		</div>
+		<div class="dropdown dropdownLeft">
+			<div class="mui-row">
+				<ul class="max-screen">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="huanzheliebiao.html">我的患者</a></li>
+					<li><a href="javascript:;">治疗列表</a></li>
+					<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+					<li><a href="javascript:;">患者交流</a></li>
+					<li><a href="EMR.html">病例管理</a></li>
+					<li><a href="gerenxinxi.html">个人中心</a></li>
+				</ul>
+			</div>		
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="mui-row">
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox1">
+						<a href="../index.html">
+							<img src="../images/home.png" src0="../images/home.png" src1="../images/home1.png" alt="">
+							<p>首页</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox2">
+						<a href="JLG_huanzhezixun.html">
+							<img src="../images/huanzhe.png" src0="../images/huanzhe.png" src1="../images/huanzhe.png" alt="">
+							<p>联系患者</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox3">
+						<a href="JLG_yishengzhuli.html">
+							<img src="../images/zhuli.png" src0="../images/zhuli.png" src1="../images/zhuli1.png" alt="">
+							<p>联系助理</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox4">
+						<a href="javascript:;">
+							<img src="../images/back.png" src0="../images/back.png" src1="../images/back1.png" alt="">
+							<p>返回</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div class="mui-segmented-control">
+					<a class="mui-control" href="EMR_chuzhenxiangqing.html">
+						初诊详情
+					</a>
+					<a class="mui-control" href="EMR_suizhenjilu.html">
+						随诊记录
+					</a>
+					<a class="mui-control" href="ZLG_zhiliaofangan.html">
+						治疗方案
+					</a>
+					<a class="mui-control" href="ZLG_zhiliaojiankong.html">
+						治疗监控
+					</a>
+				</div>
+			</div>
+			<div class="container b_c" style="border-bottom: 0;margin: 0 10px;">
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">患者姓名</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						张三
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<a href="HZG_huanzhexinyu.html">
+							<button class="btn btn-success" style="padding: 4px 6px;">信誉</button>
+							<div class="bingqing bingqing3" style="float:none;display:inline-block;"></div>
+							<div class="xinyong xinyong2" style="float:none;display:inline-block;"></div>
+						</a>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<a href="HZG_huanzhexinxi.html">
+							<button class="btn btn-success">个人信息</button>
+						</a>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">主诉：</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								     <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="30"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">病史：</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="30"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 text_l" style="margin-left: 10px;">
+							OD远近视力						</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						0.02
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						0.02
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						0.02
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						0.02
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 text_l" style="margin-left: 10px;">
+							OD屈光状态
+							<button type="button" class="btn btn-success">小瞳</button>
+							<input type="text" name="" style="width: 15%" maxlength="10" class="onlyE">ADD:+3.00DS</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">屈光类型</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						远视
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">注视性质</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						中心注视
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4">
+							-3.00DS</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4">
+							-1.00DC</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4 ">120°
+						</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 text_l" style="margin-left: 10px;">OS远近视力</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						0.02
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近裸眼V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						0.02
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">远矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						0.02
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">近矫正V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						0.02
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-ld-12">
+						<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-ld-12 text_l" style="margin-left: 10px;">
+							OS屈光状态
+							<button type="button" class="btn btn-success">小瞳</button>
+							<input type="text" name="" style="width: 15%" maxlength="10" class="onlyE">ADD:+3.00DS
+						</div> 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">屈光类型</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						远视
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">注视性质</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						中心注视
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4 ">
+							-3.00DS
+						</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4">
+							-2.00DC°
+						</div> 
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4">170°
+						</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">斜视类型</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						无斜视
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">固视情况</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						交替性注视
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">斜视角度</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						OD:-15°
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">有无抑制</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						无抑制
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">拥挤现象(左)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						有
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">拥挤现象(右)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						有
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">低照度视力(左)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						有下降
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">低照度视力(右)</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						有下降
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">Worth灯30</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						两个红灯
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">Worth灯6M</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						两个红灯
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">马氏杆H</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						正常
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">马氏杆V</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						正常
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">立体视</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c bL_c">
+						3000秒
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">图片资料</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-"><a href="EMR_tupianB.html">
+					  <button type="button" class="btn btn-success">详情</button>
+					</a>
+						 
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">外眼检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								   <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">眼前节检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">眼后节检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								   <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <textarea name="" rows="" cols="" class="fixTextarea" maxlength="200"></textarea>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">其他检查</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">详情点击右侧展开 →</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								            <p>这是实际内容</p>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">诊断</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">OD</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						斜视性弱视
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						斜视性弱视
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						轻度弱视
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">OS</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bL_c bR_c">
+						斜视性弱视
+						</select>
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						斜视性弱视
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						轻度弱视
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<div class="mui-row">
+							<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">诊断</div>
+							<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 bL_c">
+								<ul class="mui-table-view zhedie">
+								    <li class="mui-table-view-cell mui-collapse">
+								        <a class="mui-navigate-right" href="#">由医生录入</a>
+								        <div class="mui-collapse-content" style="background:#efeff4;">
+								           <p>这是实际内容</p>
+								        </div>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="height: 32px;"></div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+						<ul class="mui-table-view zhedie">
+						    <li class="mui-table-view-cell mui-collapse" style="background: #40B0BE;color: #fff;">
+						        <a class="mui-navigate-right" href="#">治疗方案</a>
+						        <div class="mui-collapse-content" style="padding: 0;">
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set set1">
+						            		用药处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="panel-body" style="text-align: left;">
+													<p>R:这是实际内容</p>
+												</div>
+							            	</div>
+							            </div>
+							            <div class="mui-row bB_c detail2 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														正常
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														自购
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														金额
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														处方及优惠
+													</div>
+												</div>
+												<div class="mui-row">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<div class="duihao"></div>
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<div class="duihao"></div>
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														111
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														1111
+													</div>
+												</div>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set1">
+						            		配镜处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 bB_c">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OD
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														
+													</div>
+												</div>
+							            	</div>
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OS
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														
+													</div>
+												</div>
+							            	</div>
+							            </div>
+							            <div class="mui-row bB_c detail2 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														正常
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														自购
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														普通
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														双光
+													</div>
+												</div>
+												<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<div class="duihao"></div>
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<div class="duihao"></div>
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														<div class="duihao"></div>
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														<div class="duihao"></div>
+													</div>
+												</div>
+							            	</div>
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="mui-row bB_c">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														压抑
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														斜视
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														金额
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														型号及优惠
+													</div>
+												</div>
+												<div class="mui-row">
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<div class="duihao"></div>
+													</div>
+													<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+														<div class="duihao"></div>
+													</div>
+													<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														111
+													</div>
+													<div class="mui-col-xs-5 mui-col-sm-5 mui-col-md-5 mui-col-lg-5">
+														11111
+													</div>
+												</div>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set1">
+						            		遮盖处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 bB_c">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OD遮盖方法
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														
+													</div>
+												</div>
+							            	</div>
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<div class="panel-body mui-row" style="text-align: left;">
+							            			<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+														OS遮盖方法
+													</div>
+													<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+														
+													</div>
+												</div>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row bB_c">
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c set1">
+						            		训练处方
+						            	</div>
+						            	<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 set2">
+						            		详情
+						            	</div>
+						            </div>
+						            <div>
+						            	<div class="mui-row bB_c detail1 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<p>这是实际内容</p>
+							            	</div>
+							            </div>
+							            <div class="mui-row bB_c detail2 detail">
+							            	<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12">
+							            		<p>这是实际内容</p>
+							            	</div>
+							            </div>
+						            </div>
+						            <div class="mui-row">
+						            	<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+						            		其他
+						            	</div>
+						            	<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+						            		<p>这是实际内容</p>
+						            	</div>
+						            </div>
+						        </div>
+						    </li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">录入人员</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="张三">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">录入时间</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">2016.11.17</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">确认人员</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="张三">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">确认时间</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">2016.11.17</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">修改人员</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="李四">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">修改时间</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">2016.11.17</div>
+				</div>
+				<div class="mui-row bB_c">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">主诊医生</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" value="张三">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">医生助理</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">2016.11.17</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/zepto_1.1.3.js"></script>
+		<script src="../js/index.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			dropDown();
+			dropDownSelect();
+			
+			$('.mui-row .change').each(function(){
+				$(this).on('click',function(){
+					var html = $(this).html();
+					if(html=='小瞳'){
+						$(this).html('散瞳')
+					}else{
+						$(this).html('小瞳');
+					}
+				})
+			})
+			$('.mui-row .set1').each(function(){
+				$(this).on('click',function(){
+					$('.detail').removeClass('active');
+					$(this).parent().next().find('.detail1').addClass('active');
+				})
+			})
+			$('.mui-row .set2').each(function(){
+				$(this).on('click',function(){
+					$('.detail').removeClass('active');
+					$(this).parent().next().find('.detail2').addClass('active');
+				})
+			})
+		</script>
+	</body>
+
+</html>

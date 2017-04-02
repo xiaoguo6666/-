@@ -1,0 +1,252 @@
+body, h1, h2, h3, h4, h5, h6, p, pre, ul, ol, li, dl, dt, dd, form, input, textarea, select, option {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+img {
+    border: none;
+}
+
+i{
+	font-style: normal;
+}
+b{
+	font-weight: normal;
+}
+*{
+	font-family:"微软雅黑";
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+}
+.bgf{
+	background: #fff;
+}
+.borderL_fff{
+	border-left: 1px solid #fff;
+}
+.bL_f{
+	border-left: 1px solid #fff;
+}
+.bR_f{
+	border-right: 1px solid #fff; 
+}
+.bT_f{
+	border-top: 1px solid #fff; 
+}
+.bB_f{
+	border-bottom: 1px solid #fff; 
+}
+.b_f{
+	border: 1px solid #fff; 
+}
+.bL_c{
+	border-left: 1px solid #ccc;
+}
+.bR_c{
+	border-right: 1px solid #ccc; 
+}
+.bT_c{
+	border-top: 1px solid #ccc; 
+}
+.bB_c{
+	border-bottom: 1px solid #ccc; 
+}
+.b_c{
+	border: 1px solid #ccc; 
+}
+.no_b{
+	border: 0;
+}
+.text_l{
+	text-align: left;
+}
+header.mui-bar{
+	background: #40b0be;
+}
+header.mui-bar h1{
+	color: #fff;
+}
+header.mui-bar .xialaImg{
+	height: 26px;
+	position: absolute;
+	left: 0;
+	top:0;
+	margin-left: 15px;
+	margin-top: 9px;
+}
+header.mui-bar .selectImg{
+	height: 26px;
+	position: absolute;
+	right: 0;
+	top:0;
+	margin-right: 10px;
+	margin-top: 9px;
+}
+header.mui-bar .addImg{
+	height: 26px;
+	position: absolute;
+	right: 0;
+	top:0;
+	margin-right: 10px;
+	margin-top: 9px;
+}
+header.mui-bar .okImg{
+	height: 26px;
+	position: absolute;
+	right: 0;
+	top:0;
+	margin-right: 10px;
+	margin-top: 9px;
+}
+.btn{
+	font-size: 12px;
+	padding: 4px 12px;
+}
+.dropdown{
+	position: fixed;
+	top:44px;
+	width: 100%;
+}
+.dropdown.active{
+	display: block;
+	z-index: 999;
+}
+/**********************************手机端下拉菜单********************************/
+.dropdownTop .container{
+	padding-left: 0;
+}
+.dropdownTop{
+	left: 0;
+}
+.dropdownTop ul{
+	padding: 10px 0 10px 0;
+	background:rgba(113,113,113,.8);
+	width: 100%;
+	opacity: 0;
+	height: 0;
+	transition:opacity ease .8s;
+}
+.dropdownTop ul li{
+	padding:1px 0;
+	width: 100%;
+	opacity: 0;
+	transition:opacity ease .8s;
+}
+.dropdownTop ul li a{
+	color:#fff;
+	font-size: 14px;
+	line-height: 40px;
+}
+.dropdownTop.active ul{
+	opacity: 1;
+	height: 100%;
+	transition:height,opacity ease .8s;
+}
+.dropdownTop.active ul li{
+	opacity: 1;
+	transition:opacity ease .8s;
+}
+/**********************************平板PC端侧拉菜单********************************/
+.dropdownLeft{
+	left:0;
+	width: 0px;
+	background:rgba(113,113,113,.8);
+	transition:width ease .8s;
+}
+.dropdownLeft.active{
+	width: 120px;
+	transition:width ease .8s;
+}
+.dropdownLeft ul li{
+	width: 0;
+	opacity: 0;
+	line-height: 40px;
+	transition:width ease .8s;
+}
+.dropdownLeft.active ul li{
+	width: 120px;
+	opacity: 1;
+	transition:width ease .8s;
+}
+.dropdownLeft ul li a{
+	color: #fff;
+}
+/*******************************筛选********************************/
+.dropdownRight{
+	right: -60%;
+	width: 60%;
+	background:rgba(113,113,113,.9);
+	z-index: 999;
+	color: #fff;
+	transition:right .9s ease;
+}
+.dropdownRight.active{
+	right: 0;
+	transition:right .9s ease;
+}
+.dropdownRight>.mui-row>p{	
+	line-height: 30px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.dropdownRight p{
+	color: #fff;
+	line-height: 40px;
+}
+.dropdownRight .paixu{
+	border-bottom: 1px solid #f4f4f4;
+}
+.dropdownRight ul li{
+	color: #fff;
+	line-height: 40px;
+}
+.dropdownRight .selectList input{
+	width: 100%;
+	margin: 10px 0;
+	border: 1px solid #f4f4f4;
+	background: rgba(113,113,113,.8);
+	color: #fff;
+}
+.dropdownRight .selectList button{
+	margin: 10px 0;
+	background: rgba(113,113,113,.8);
+	border: 1px solid #f4f4f4;
+	color: #fff;
+	font-size: 12px;
+	height: 24px;
+	line-height: 12px;
+}
+/*******************************快速选择********************************/
+.dropdownRight1{
+	right: -60%;
+	width: 40%;
+	background:rgba(64,176,190,.9);
+	z-index: 999;
+	color: #fff;
+	transition:right .9s ease;
+}
+.dropdownRight1 ul li{
+	color: #fff;
+	line-height: 40px;
+}
+.dropdownRight1 ul li a{
+	color: #fff;
+}
+.dropdownRight1.active{
+	right: 0;
+	transition:right .9s ease;
+}
+.duihao{
+	background: url('../images/dui.png') no-repeat center;
+	background-size: 20px;
+	height: 32px;
+}
+.wrap{
+	/*padding: 0 15px;*/
+}

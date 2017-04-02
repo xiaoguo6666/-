@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>信誉确认列表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/index.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-row>div{
+				line-height: 32px;
+			}
+			.mui-row>div button{
+				margin-top: 2px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <img src="../images/xiala.png" class="xialaImg">
+		    <h1 class="mui-title">信誉确认列表</h1>
+		    <img src="../images/select.png" class="selectImg">
+		</header>
+		<div class="dropdown dropdownTop">
+			<div class="mui-row">
+				<div class="mui-col-xs-4">
+					<ul class="min-screen">
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="huanzheliebiao.html">患者列表</a></li>
+						<li><a href="javascript:;">治疗管理</a></li>
+						<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+						<li><a href="javascript:;">患者交流</a></li>
+						<li><a href="login.html">登录页面</a></li>
+						<li><a href="shenqingzhuce.html">申请注册</a></li>
+	               </ul>
+				</div>
+			</div>				
+		</div>
+		<div class="dropdown dropdownLeft">
+			<div class="mui-row">
+				<ul class="max-screen">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="huanzheliebiao.html">我的患者</a></li>
+					<li><a href="javascript:;">治疗列表</a></li>
+					<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+					<li><a href="javascript:;">患者交流</a></li>
+					<li><a href="EMR.html">病例管理</a></li>
+					<li><a href="gerenxinxi.html">个人中心</a></li>
+				</ul>
+			</div>		
+		</div>
+		<div class="dropdown dropdownRight">
+			<div class="mui-row">
+				<p>排序和筛选</p>
+			</div>
+			<div class="mui-row paixu">
+				<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3"><p>排序</p></div>
+				<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+					<div class="mui-row">
+						<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9  bL_f">
+							<ul>
+								<li>最新排前面</li>
+								<li>最早排前面</li>
+								<li>患者名升序</li>
+								<li>患者名降序</li>
+							</ul>
+						</div>
+						<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-row selectList">
+				<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3"><p>筛选</p></div>
+				<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+					<div class="mui-row">
+						<div class="mui-col-xs-8 mui-col-sm-8 mui-col-md-8 bL_f" style="padding: 0 15px;">
+							<input type="text" name="select" style="height: 24px;"/>
+						</div>
+						<div class="mui-col-xs-4 mui-col-sm-4 mui-col-md-4 mui-col-lg-4" style="padding:0">
+							<button>确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<nav class="mui-bar mui-bar-tab">
+		<div class="mui-row">
+			<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+				<div class="tabBox tabBox1">
+					<a href="../index.html">
+						<img src="../images/home.png" src0="../images/home.png" src1="../images/home1.png" alt="">
+						<p>首页</p>
+					</a>
+				</div>
+			</div>
+			<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+				<div class="tabBox tabBox2">
+					<a href="javascript:;">
+						<img src="../images/prev.png" src0="../images/prev.png" src1="../images/prev1.png" alt="">
+						<p>上一页</p>
+					</a>
+				</div>
+			</div>
+			<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+				<div class="tabBox tabBox3">
+					<a href="javascript:;">
+						<img src="../images/next.png" src0="../images/next.png" src1="../images/next1.png" alt="">
+						<p>下一页</p>
+					</a>
+				</div>
+			</div>
+			<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+				<div class="tabBox tabBox4">
+					<a href="javascript:;">
+						<img src="../images/back.png" src0="../images/back.png" src1="../images/back1.png" alt="">
+						<p>返回</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">
+						治疗患者
+					</a>
+					<a class="mui-control-item" href="#item2">
+						普通患者
+					</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div class="b_c" style="margin: 0 10px;border-bottom: 0;">
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+								编号
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+								<div class="mui-row">
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										患者姓名
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										录入时间
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										录入人员
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">详情</div>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+								1
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+								<div class="mui-row">
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										2017.1.6
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+										<a href="HZG_huanzhexinyuqueren.html">
+											<button type="button" class="btn btn-success">详情</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+								2
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+								<div class="mui-row">
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										2017.1.6
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+										<a href="gerenxinyuqueren.html">
+											<button type="button" class="btn btn-success">详情</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+								3
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+								<div class="mui-row">
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										2017.1.6
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+										<a href="gerenxinyuqueren.html">
+											<button type="button" class="btn btn-success">详情</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<div class="b_c" style="margin: 0 10px;border-bottom: 0;">
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+								编号
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+								<div class="mui-row">
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										患者姓名
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										录入时间
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										录入人员
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+										确认
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+								1
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+								<div class="mui-row">
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										2017.1.6
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+										<a href="gerenxinyuqueren.html">
+											<button type="button" class="btn btn-success">详情</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bB_c">
+							<div class="mui-col-xs-2 mui-col-sm-2 mui-col-md-2 mui-col-lg-2 bR_c">
+								2
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10 mui-col-md-10 mui-col-lg-10">
+								<div class="mui-row">
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										2017.1.6
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+										张三
+									</div>
+									<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+										<a href="gerenxinyuqueren.html">
+											<button type="button" class="btn btn-success">详情</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/zepto_1.1.3.js"></script>
+		<script src="../js/index.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			dropDown();
+			dropDownSelect();
+		</script>
+	</body>
+
+</html>

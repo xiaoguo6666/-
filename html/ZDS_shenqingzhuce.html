@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>申请注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/index.css" rel="stylesheet" />
+		<link href="../css/mui.picker.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-row>div{
+				line-height: 32px;
+			}
+			.mui-row>div button{
+				margin-top: 2px;
+			}
+			/*年月日*/
+			[data-type="date"] .mui-picker,
+			[data-type="date"] .mui-dtpicker-title h5 {
+			    width: 33.333%;
+			}
+			[data-type="date"] [data-id="picker-i"],
+			[data-type="date"] [data-id="title-i"],[data-date="month"] [data-id="picker-h"],
+			[data-type="date"] [data-id="title-h"]{
+			    display: none;
+			}
+			.mui-dtpicker-header .mui-btn{
+				float: left;
+			}
+			.mui-dtpicker-header{
+				overflow: hidden;
+			}
+			.mui-dtpicker-title{
+				opacity: 0;
+			}
+    		.mui-bar{
+    			box-shadow:box-shadow: 0 0 0px rgba(0,0,0,.85);
+    			-webkit-box-shadow: 0 0 0px rgba(0,0,0,.85);
+    		}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <img src="../images/xiala.png" class="xialaImg">
+		    <h1 class="mui-title">申请注册</h1>
+		</header>
+		<div class="dropdown dropdownTop">
+			<div class="mui-row">
+				<div class="mui-col-xs-4">
+					<ul class="min-screen">
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="huanzheliebiao.html">患者列表</a></li>
+						<li><a href="javascript:;">治疗管理</a></li>
+						<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+						<li><a href="javascript:;">患者交流</a></li>
+						<li><a href="login.html">登录页面</a></li>
+						<li><a href="shenqingzhuce.html">申请注册</a></li>
+	               </ul>
+				</div>
+			</div>				
+		</div>
+		<div class="dropdown dropdownLeft">
+			<div class="mui-row">
+				<ul class="max-screen">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="huanzheliebiao.html">我的患者</a></li>
+					<li><a href="javascript:;">治疗列表</a></li>
+					<li><a href="qunfaxiaoxi.html">群发信息</a></li>
+					<li><a href="javascript:;">患者交流</a></li>
+					<li><a href="EMR.html">病例管理</a></li>
+					<li><a href="gerenxinxi.html">个人中心</a></li>
+				</ul>
+			</div>		
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="mui-row">
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox1">
+						<a href="../index.html">
+							<img src="../images/home.png" src0="../images/home.png" src1="../images/home1.png" alt="">
+							<p>首页</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox2">
+						<a href="javascript:;">
+							<img src="../images/baocun.png" src0="../images/baocun.png" src1="../images/baocun.png" alt="">
+							<p>保存设置</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox3">
+						<a href="javascript:;">
+							<img src="../images/edit.png" src0="../images/edit.png" src1="../images/edit.png" alt="">
+							<p>修改简介</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3">
+					<div class="tabBox tabBox4">
+						<a href="javascript:;">
+							<img src="../images/back.png" src0="../images/back.png" src1="../images/back1.png" alt="">
+							<p>返回</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="mui-content">
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<div class="mui-slider-item mui-slider-item-duplicate"><img src="../images/banner02.png" /></div>
+					<div class="mui-slider-item"><img src="../images/banner01.jpg" /></div>
+					<div class="mui-slider-item"><a href="#"><img src="../images/banner02.png" /></a></div>
+					<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../images/banner01.jpg" /></a></div>
+				</div>
+			</div>
+			<div class="iconWrap">
+				<div class="mui-row">
+					<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3" style="padding-right: 10px;padding-left: 10px;">
+						<div class="iconImg">
+							<img src="../images/wdhz.png" alt="">
+							<span class="mui-badge">3</span>
+						</div>
+						<div class="iconText">
+							<span>我的患者</span>
+						</div>
+					</div>
+					<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3" style="padding-right: 10px;padding-left: 10px;">
+						<div class="iconImg">
+							<img src="../images/zxxx.png" alt="">
+							<span class="mui-badge">3</span>
+						</div>
+						<div class="iconText">
+							<span>咨询信息</span>
+						</div>
+					</div>
+					<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3" style="padding-right: 10px;padding-left: 10px;">
+						<div class="iconImg">
+							<img src="../images/qfxx.png" alt="">
+							<span class="mui-badge">3</span>
+						</div>
+						<div class="iconText">
+							<span>群发消息</span>
+						</div>
+					</div>
+					<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3" style="padding-right: 10px;padding-left: 10px;">
+						<div class="iconImg">
+							<img src="../images/yszl.png" alt="">
+							<span class="mui-badge">3</span>
+						</div>
+						<div class="iconText">
+							<span>医生助理</span>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="container b_c">
+				<div class="mui-row bB_c" style="background: #40b0be;">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12" style="color: #fff;">
+						今日任务 - 注册
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						姓名
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						<input type="text" name="" placeholder="张三">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						性别
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select> 
+							<option value="1">男</option>  
+						  	<option value="2">女</option> 
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						省市
+					</div>
+					<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 city">
+						请选择城市
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">
+						生日
+					</div>
+					<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9 birthday">
+						请选择年月日
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">联系电话</div>
+					<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+						<input type="text" name="" value="">
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">微信号</div>
+					<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+						<input type="text" name="" value="">
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">QQ号</div>
+					<div class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">
+						<input type="text" name="" value="">
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">邮箱</div>
+					<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c">
+						<input type="text" name="" value="">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<select name="selectc">
+							<option value="0" selected>医生</option>
+							<option value="1" selected>助理</option>
+						</select>
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3 bR_c">验证码</div>
+					<div class="mui-col-xs-6 mui-col-sm-6 mui-col-md-6 mui-col-lg-6 bR_c">
+						<input type="text" name="" value="">
+					</div>
+					<div class="mui-col-xs-3 mui-col-sm-3 mui-col-md-3 mui-col-lg-3">
+						<div style="background: #ccc;color: #fff;line-height: 33px;">ABf5O</div>
+					</div>
+				</div>
+				<div class="mui-row bB_c" style="background: #efeff4;">
+					<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-12 ">
+						<button style="background: #40b0be;color: #fff;line-height: 33px;border: 0;width: 100%;padding:0" class="submit">提交</button>
+					</div>
+				</div>
+				<div class="mui-row submitShow">
+					<p>
+						今日任务已完成，感谢您对我们的信任，<br>
+						您的注册申请已经进入审核阶段，<br>
+						请保持通信电话通畅，<br>
+						我们的工作人员将在最快的时间内联系您！<br>
+						祝您工作愉快！<br>
+					</p>
+				</div>
+			</div>
+			<div class="wrap" style="margin-top: 10px;">
+				<div class="newPatient bgf">
+					<div class="patientTitle titleInner">
+						<div class="mui-row">
+							<div class="mui-col-md-9 mui-col-lg-9 mui-col-sm-9 mui-col-xs-9" style="text-align:left">
+								新增患者
+							</div>
+							<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3">
+								<button type="button" class="btn btn-success">更多</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="patientInner">
+					<div class="inner">
+						<div class="mui-row">
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="patient">王敏王敏</div>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="patient">丽丽</div>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="patient">佳佳让他</div>
+							</div>
+						</div>
+						<div class="mui-row" style="margin-top:10px">
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="patient">明明广东</div>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="patient">郝佳额</div>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="patient">郝佳额</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="wrap">
+				<div class="newAsk bgf">
+					<div class="askTitle titleInner">
+						<div class="mui-row">
+							<div class="mui-col-md-9 mui-col-lg-9 mui-col-sm-9 mui-col-xs-9" style="text-align:left">
+								最新咨询
+							</div>
+							<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3">
+								<button type="button" class="btn btn-success">更多</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="askInner" style="padding: 0 10px;">
+					<div class="container">
+						<div class="mui-row bgf patient">
+							<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3">
+								<p>张三王敏</p>
+							</div>
+							<div class="mui-col-md-2 mui-col-sm-2 mui-col-xs-2 mui-col-lg-4">
+								<div class="bingqing bingqing1"></div>
+								<div class="xinyong xinyong4"></div>
+							</div>
+							<div class="mui-col-md-7 mui-col-sm-7 mui-col-xs-7 mui-col-lg-7">
+								<div class="newsTitle">
+									<p>*****************</p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bgf patient">
+							<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3">
+								<p>李四发到</p>
+							</div>
+							<div class="mui-col-md-2 mui-col-sm-2 mui-col-xs-2 mui-col-lg-4">
+								<div class="bingqing bingqing2"></div>
+								<div class="xinyong xinyong3"></div>
+							</div>
+							<div class="mui-col-md-7 mui-col-sm-7 mui-col-xs-7 mui-col-lg-7">
+								<div class="newsTitle">
+									<p>*****************</p>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row bgf patient">
+							<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3">
+								<p>李四</p>
+							</div>
+							<div class="mui-col-md-2 mui-col-sm-2 cmui-ol-xs-2 mui-col-lg-4">
+								<div class="bingqing bingqing3"></div>
+								<div class="xinyong xinyong2"></div>
+							</div>
+							<div class="col-md-7 col-sm-7 col-xs-7 mui-col-lg-7">
+								<div class="newsTitle">
+									<p>*****************</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="wrap">
+				<div class="zhulitishi bgf">
+					<div class="todayTitle titleInner">
+						<div class="mui-row">
+							<div class="mui-col-md-9 mui-col-lg-9 mui-col-sm-9 mui-col-xs-9" style="text-align:left">
+								助理提示
+							</div>
+							<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3">
+	                       		<button type="button" class="btn btn-success">更多</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="point bgf" style="padding-bottom: 10px;">
+					<div class="mui-row">
+						<div class="mui-col-sm-12 mui-col-xs-12 mui-col-lg-12 mui-col-md-12">
+							<p class="ponitText">这是最新提示这是最新提示这是最新提示这是最新提示这是最新提示这是最新提示</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="todayOutpatients bgf">
+					<div class="todayTitle titleInner">
+						<div class="mui-row">
+							<div class="mui-col-md-9 mui-col-lg-9 mui-col-sm-9 mui-col-xs-9" style="text-align:left">
+								今日门诊
+							</div>
+							<div class="mui-col-md-3 mui-col-lg-3 mui-col-sm-3 mui-col-xs-3">
+								<button type="button" class="btn btn-success">更多</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="todayInner">
+					<div class="inner">
+						<div class="mui-row">
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<a href="html/EMR.html">
+									<div class="today mui-row">
+										<p class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9" style="padding:0;">王敏王敏</p>
+										<div class="bingqing bingqing3"></div>
+										<div class="xinyong xinyong2"></div>
+									</div>
+								</a>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="today mui-row">
+									<p class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">丽丽地方</p>
+									<div class="bingqing bingqing3"></div>
+									<div class="xinyong xinyong2"></div>
+								</div>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="today mui-row">
+									<p class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">佳佳阿发</p>
+									<div class="bingqing bingqing3"></div>
+									<div class="xinyong xinyong2"></div>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row" style="margin-top:10px">
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="today mui-row">
+									<p class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">明明范</p>
+									<div class="bingqing bingqing3"></div>
+									<div class="xinyong xinyong2"></div>
+								</div>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="today row">
+									<p class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">郝佳儿</p>
+									<div class="bingqing bingqing3"></div>
+									<div class="xinyong xinyong2"></div>
+								</div>
+							</div>
+							<div class="mui-col-md-4 mui-col-lg-4 mui-col-sm-4 mui-col-xs-4">
+								<div class="today row">
+									<p class="mui-col-xs-9 mui-col-sm-9 mui-col-md-9 mui-col-lg-9">郝佳玩儿</p>
+									<div class="bingqing bingqing3"></div>
+									<div class="xinyong xinyong2"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/zepto_1.1.3.js"></script>
+		<script src="../js/index.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/city.data.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			dropDown();
+			dropDownSelect();
+//			var height =screen.height;
+//			$('.mui-content').css({'height':height});
+			
+			mui('.mui-row').on('tap','.city',function(){
+				var cityPicker = new mui.PopPicker({
+					layer:2
+				});
+				cityPicker.setData(cityData);
+				cityPicker.show(function(items) {
+					$('.city').html(items[0].text + " " + items[1].text);
+				})
+			});
+			mui('.mui-row').on('tap','.birthday',function(){
+				var dtpicker = new mui.DtPicker({
+				    type: "date",//设置日历初始视图模式 
+				    beginDate: new Date(1900, 01,01),//设置开始日期 
+				    endDate: new Date(3000, 01,01),//设置结束日期 
+				})
+				dtpicker.show(function (selectItems) { 
+					var y = selectItems.y.text;
+					var m = selectItems.m.text;
+					var d = selectItems.d.text;
+			        $('.birthday').html(y +' - '+ m +' - '+d);
+			    }) 
+			});
+		</script>
+	</body>
+
+</html>
